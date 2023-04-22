@@ -50,8 +50,10 @@ export default function Layout({ children, home }) {
           <>
             <Image
               priority
-              src={header}
+              src="/header.png"
               alt=""
+              width="588"
+              height="140"
             />
           </>
         ) : (
@@ -59,8 +61,10 @@ export default function Layout({ children, home }) {
             <Link href="/">
               <Image
                 priority
-                src={header}
+                src="/header.png"
                 alt=""
+                width="588"
+                height="140"
               />
             </Link>
             <h2 className={utilStyles.headingLg}>
