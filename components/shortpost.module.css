@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'w95fa';
+    src: url(https://dl.dropbox.com/s/hy2bknk97mzw9q9/W95FA.otf) format("truetype");
+  }
+  
+@font-face {
+    font-family: 'utonium';
+    src: url(https://dl.dropbox.com/s/i1ca9p2b9cwhzbg/Utonium.otf);
+  }
+
+.shortpost {
+    background-color: #A99BB9;
+    text-align: left;
+    border: 1px solid #d3d3d3;
+    display: show;
+    zoom: 110%;
+    margin: 1rem auto 3rem;
+}
+
+.shortpostheader {
+  text-align: left;
+  margin: 2px;
+  z-index: 10;
+  padding: 3px;
+  height: 16px;
+  padding-top: 5px;
+
+  border-top: 1px solid #ebe6f0;
+  border-left: 1px solid #ebe6f0;
+  outline: 1px solid #5f4d73;
+  font-size: 13px;
+  position: relative;
+
+}
+
+.shortpostcontent {
+    position: relative;
+    margin: 2px;
+    padding: 5px;
+    overflow-y:scroll;
+    background-color: #ebedf0;
+    border-top: 2px solid #3b2f4a;;
+    border-left: 2px solid #3b2f4a;;
+    border-right: 2px solid #5f4d73;
+    border-bottom: 2px solid #5f4d73;
+}
+
+.shortpostbutton {
+  float: right;
+  border: 1px outset #3b2f4a;
+}
+.shortpostbutton:hover {
+  box-shadow: 1px 1px 0px #5f4d73, -1px -1px 0px #ebe6f0;
+  cursor: pointer;
+}
+
+.changemodepurple {
+  --background: url("https://i.imgur.com/Qv16whT.png");
+  --headerbackground: url("https://i.imgur.com/Qv16whT.png");
+  --contrastbg: #ffffff;
+  --lightest: #ebe6f0;
+  --light: #ebe6f0; 
+  --shadow: #5f4d73;
+  --dark: #423254;
+  --darkest: #3b2f4a;
+  background: var(--background);
+}
+.content {
+  position: relative;
+  height: 200px;
+  margin: 2px;
+  padding: 5px;
+  background-color: var(--lightest);
+  border-top: 2px solid var(--darkest);
+  border-left: 2px solid var(--darkest);
+  border-right: 2px solid var(--shadow);
+  border-bottom: 2px solid var(--shadow);
+}
