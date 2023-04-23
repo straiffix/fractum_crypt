@@ -1,4 +1,4 @@
-import styles from './shortpost.module.css';
+import styles from '../styles/ShortPost.module.css';
 
 function ShortPost({ post_id, post }){
     

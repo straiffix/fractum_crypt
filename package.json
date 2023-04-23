@@ -3,9 +3,9 @@
   "homepage": "https://straiffix.github.io/fractumscrypt",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "start": "next start"
   },
   "dependencies": {
     "firebase": "^9.19.1",

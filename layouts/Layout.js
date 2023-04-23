@@ -1,11 +1,8 @@
 import Head from 'next/head';
 import Image from 'next/image';
-import styles from './layout.module.css';
-import utilStyles from '../styles/utils.module.css';
+import styles from '../styles/Layout.module.css';
 import Link from 'next/link';
 import header from '../images/header.png'
-
-const name = 'Your Name';
 export const siteTitle = 'Next.js Sample Website';
 
 export default function Layout({ children, home }) {
@@ -19,7 +16,6 @@ export default function Layout({ children, home }) {
         width: "100vw",
         height: "100vh"
       }}>
-      
           <Image
           src="/background_lines.png" 
           layout="fill"
@@ -28,7 +24,7 @@ export default function Layout({ children, home }) {
       
       </div>
       
-    <div className={styles.container}>
+    <div className={styles.container_layout}>
       
       <Head>
         <link rel="icon" href="/favicon.ico" />
@@ -45,7 +41,7 @@ export default function Layout({ children, home }) {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className={styles.header_layout}>
         {home ? (
           <>
             <Image
@@ -67,8 +63,6 @@ export default function Layout({ children, home }) {
                 height="140"
               />
             </Link>
-            <h2 className={utilStyles.headingLg}>
-            </h2>
           </>
         )}
       </header>
@@ -79,6 +73,8 @@ export default function Layout({ children, home }) {
         </div>
       )}
     </div>
+
+
     </>
   );
 }

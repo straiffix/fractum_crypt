@@ -1,4 +1,4 @@
-import Layout from '../components/layout'
+import Layout from '../layouts/Layout'
 import { db } from "../components/firebase"
 import { onValue, ref } from "firebase/database";
 import { collection, getDocs, doc, getDoc } from "firebase/firestore";

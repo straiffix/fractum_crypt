@@ -1,19 +1,5 @@
-@font-face {
-  font-family: 'w95fa';
-  src: url(https://dl.dropbox.com/s/hy2bknk97mzw9q9/W95FA.otf) format("truetype");
-}
-
-@font-face {
-  font-family: 'utonium';
-  src: url(https://dl.dropbox.com/s/i1ca9p2b9cwhzbg/Utonium.otf);
-}
-
-
 body {
     font-family: 'SF Pro Text', 'SF Pro Icons', 'Helvetica Neue', 'Helvetica',
       'Arial', sans-serif;
-    padding: 20px 20px 60px;
-    max-width: 680px;
-    margin: 0 auto;
   }
   
