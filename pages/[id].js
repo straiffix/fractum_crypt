@@ -2,19 +2,23 @@ import Layout from '../layouts/Layout'
 import { db } from "../components/firebase"
 import { onValue, ref } from "firebase/database";
 import { collection, getDocs, doc, getDoc } from "firebase/firestore";
-
+import FullPost from "../components/FullPost"
 
 export default function Post({ postData }) {
   return (
     <Layout>
-      {postData.title}
-      <br />
-      {postData.id}
-      <br />
-      {postData.author}
+      <FullPost title={postData.title} text={postData.text}/>
+
     </Layout>
   );
 }
+
+
+// {postData.title}
+// <br />
+// {postData.id}
+// <br />
+// {postData.author} 
 
 export async function getStaticProps({ params }) {
   
@@ -43,7 +47,7 @@ export async function getPostData(id) {
   // Combine the data with the id
   console.log(post_data)
   return {
-      id,
-      title: post_data.title,
+      ...post_data
+
   };
 }

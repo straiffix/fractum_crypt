@@ -1,6 +1,8 @@
 import styles from '../styles/ShortPost.module.css';
 
 function ShortPost({ post_id, post }){
+
+    console.log(post.text)
     
     return (
         <div className={styles.shortpost}>
