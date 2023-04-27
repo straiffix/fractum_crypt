@@ -23,7 +23,7 @@ export default function Home() {
       setPosts(newData); 
       }
     fetchPosts()
-    }, [posts])
+    }, [])
 
   return (
     <Layout home>
