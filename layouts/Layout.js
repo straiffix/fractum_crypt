@@ -56,6 +56,7 @@ export default function Layout({ children, home }) {
       
       <Head>
         <link rel="icon" href="/favicon.ico" />
+        <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
         <meta
           name="description"
           content="Learn how to build a personal website using Next.js"
@@ -108,7 +109,9 @@ export default function Layout({ children, home }) {
     <Folder title="Chat" handleClick={handleChatClick}/>
     </div>
       
-      {isMusic && <Window handleWindowClose={handleMusicClose}>MUSIC INFO</Window>}
+      {isAbout && <Window handleWindowClose={handleAboutClose}>
+      Some About here
+        </Window>}
       
     </>
   );

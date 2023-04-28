@@ -36,6 +36,7 @@ export default function Home() {
 // TO DO:
 // скроллбар
 // цвета
+// MODAL!!!!
 // название
 // Форматировать текст
 // Добавить адресную строку с названием ссылки
@@ -43,7 +44,6 @@ export default function Home() {
 // сделать общий стиль для окон
 // добавить отдельные файлы для содержания иконок 
 // сделать редукс
-// add some info + music + chat
 // footer: add footer, start button, 
 // authorization: add 
 
