@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'w95fa';
+    src: url(https://dl.dropbox.com/s/hy2bknk97mzw9q9/W95FA.otf) format("truetype");
+}
+  
+  
+.icon_click_outer {
+    position: relative;
+    padding: 30px;
+    text-align: center;
+    left: 10px;
+    height: 45px;
+    width: 45px;
+    font-family: 'w95fa';
+    color: #ff05d9;
+    /* z-index: -1; */
+  }
+
+.icon_click_outer:hover {
+background-color: #ffffff20;
+}
+
+
+.icon-click {
+text-align: center;
+/* font-family: 'utonium';
+color: red; */
+font-size: 12px;
+text-decoration: none;
+margin: 0 auto;
+/* z-index: -1; */
+}

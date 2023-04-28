@@ -1,0 +1,72 @@
+@font-face {
+  font-family: 'w95fa';
+  src: url(https://dl.dropbox.com/s/hy2bknk97mzw9q9/W95FA.otf) format("truetype");
+}
+
+.shortpost {
+    position: sticky;
+    background-color: #ff8ce7;
+    text-align: left;
+    border: 1px solid #d3d3d3;
+    display: show;
+    zoom: 110%;
+    z-index: 15;
+    font-family: 'w95fa';
+
+    margin: 1rem auto 3rem;
+    max-width: 40rem;
+}
+
+.closebutton {
+    margin: 1px;
+  margin-right: 3px;
+  padding: 2px;
+  height: 15px;
+  width: 15px;
+  text-align: center;
+  float: right;
+  border: 1px solid #ebe6f0;
+  border-right: 1px solid #3b2f4a;
+  border-bottom: 1px solid #3b2f4a;
+  background-color: #A99BB9;
+  color: #3b2f4a;
+  font-size: 8px;
+}
+
+.shortpostheader {
+  text-align: left;
+  margin: 2px;
+  z-index: 20;
+  padding: 3px;
+  height: 16px;
+  padding-top: 5px;
+
+  border-top: 1px solid #ebe6f0;
+  border-left: 1px solid #ebe6f0;
+  outline: 1px solid #5f4d73;
+  font-size: 13px;
+  position: relative;
+
+}
+
+.shortpostcontent {
+    position: relative;
+    margin: 2px;
+    padding: 5px;
+    overflow-y:scroll;
+    background-color: #ebedf0;
+    border-top: 2px solid #3b2f4a;
+    border-left: 2px solid #3b2f4a;
+    border-right: 2px solid #5f4d73;
+    border-bottom: 2px solid #5f4d73;
+}
+
+.shortpostbutton {
+  float: right;
+  border: 1px outset #3b2f4a;
+}
+
+.shortpostbutton:hover {
+  box-shadow: 1px 1px 0px #5f4d73, -1px -1px 0px #ebe6f0;
+  cursor: pointer;
+}
