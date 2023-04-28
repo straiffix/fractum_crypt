@@ -1,6 +1,6 @@
 .container_layout {
   position: relative;
-  max-width: 40rem;
+  max-width: 50rem;
     padding: 0 1rem;
     margin: 3rem auto 6rem;
   }
@@ -15,4 +15,20 @@
 
 .backToHome {
   margin: 3rem 0 0;
+}
+
+.folder_box {
+  position: fixed;
+  top: 100px;
+  right: 100px;
+}
+
+.shortpostbutton {
+  float: right;
+  border: 1px outset #3b2f4a;
+}
+
+.shortpostbutton:hover {
+  box-shadow: 1px 1px 0px #5f4d73, -1px -1px 0px #ebe6f0;
+  cursor: pointer;
 }

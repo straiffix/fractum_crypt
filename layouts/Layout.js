@@ -4,8 +4,36 @@ import styles from '../styles/Layout.module.css';
 import Link from 'next/link';
 import header from '../images/header.png'
 export const siteTitle = 'Next.js Sample Website';
+import Window from '../components/Window'
+import Folder from '../components/Folder'
+import Draggable from 'react-draggable';
+import { useState } from 'react';
 
 export default function Layout({ children, home }) {
+  const [isAbout, setIsAbout] = useState(false)
+  const [isMusic, setIsMusic] = useState(false)
+  const [isChat, setIsChat] = useState(false)
+
+  const handleAboutClick = (setParameterTrue) => {
+    setIsAbout(true)
+  }
+  const handleAboutClose= () => {
+    setIsAbout(false)
+  }
+  const handleMusicClick = () => {
+    setIsMusic(true)
+  }
+  const handleMusicClose= () => {
+    setIsMusic(false)
+  }
+  const handleChatClick = () => {
+    setIsChat(true)
+  }
+  const handleChatClose= () => {
+    setIsChat(false)
+  }
+
+
   return (
       <>
       <div style={{
@@ -69,12 +97,19 @@ export default function Layout({ children, home }) {
       <main>{children}</main>
       {!home && (
         <div className={styles.backToHome}>
-          <Link href="/">← Back to home</Link>
+          <form><button type="submit" formAction="/" className={styles.shortpostbutton}>Back to home</button></form>
+          {/* <Link href="/">← Back to home</Link> */}
         </div>
       )}
     </div>
-
-
+    <div className={styles.folder_box}>
+    <Folder title="About" handleClick={handleAboutClick}/>
+    <Folder title="Music" handleClick={handleMusicClick}/>
+    <Folder title="Chat" handleClick={handleChatClick}/>
+    </div>
+      
+      {isMusic && <Window handleWindowClose={handleMusicClose}>MUSIC INFO</Window>}
+      
     </>
   );
 }

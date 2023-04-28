@@ -7,7 +7,7 @@ import ShortPost from '../components/ShortPost'
 import { useState } from 'react';
 import Layout from '../layouts/Layout';
 import { useRouter } from "next/router";
-
+import { imageConfigDefault } from 'next/dist/shared/lib/image-config';
 
 export default function Home() {
 
@@ -23,7 +23,7 @@ export default function Home() {
       setPosts(newData); 
       }
     fetchPosts()
-    }, [posts])
+    }, [])
 
   return (
     <Layout home>
@@ -32,3 +32,28 @@ export default function Home() {
   );
   
 }
+
+// TO DO:
+// скроллбар
+// цвета
+// название
+// Форматировать текст
+// Добавить адресную строку с названием ссылки
+// Добавить имя автора и дату сверху
+// сделать общий стиль для окон
+// добавить отдельные файлы для содержания иконок 
+// сделать редукс
+// add some info + music + chat
+// footer: add footer, start button, 
+// authorization: add 
+
+
+// ширина окна DONE
+// сделать нормальную кнопку DONE
+// folders: add folder icon,  DONE
+// add open by click, DONE
+// add close button, DONE
+// make some different folders,  DONE
+// firebase: fix DONE
+// styles: fix content showing DONE
+// добавить фиксед для иконок DONE

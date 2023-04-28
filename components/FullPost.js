@@ -1,5 +1,6 @@
-import styles from '../styles/FullPost.module.css';
-import ReactMarkdown from 'react-markdown'
+import styles from '../styles/ShortPost.module.css';
+// import ReactMarkdown from 'react-markdown'
+import parse from 'html-react-parser';
 
 function FullPost({ title, text }){
     
@@ -8,7 +9,7 @@ function FullPost({ title, text }){
             <div className={styles.shortpostheader}>{title}
             </div>
             <div className={styles.shortpostcontent}>
-            <ReactMarkdown>{text}</ReactMarkdown>
+            {parse(text)}
             </div>
         </div>
 

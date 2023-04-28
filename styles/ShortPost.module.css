@@ -1,5 +1,9 @@
+@font-face {
+  font-family: 'w95fa';
+  src: url(https://dl.dropbox.com/s/hy2bknk97mzw9q9/W95FA.otf) format("truetype");
+}
 .shortpost {
-    background-color: #A99BB9;
+    background-color: #ff8ce7;
     text-align: left;
     border: 1px solid #d3d3d3;
     display: show;
@@ -15,6 +19,8 @@
   height: 16px;
   padding-top: 5px;
 
+  font-family: 'w95fa';
+
   border-top: 1px solid #ebe6f0;
   border-left: 1px solid #ebe6f0;
   outline: 1px solid #5f4d73;
@@ -28,6 +34,9 @@
     margin: 2px;
     padding: 5px;
     overflow-y:scroll;
+
+    font-family: 'w95fa';
+
     background-color: #ebedf0;
     border-top: 2px solid #3b2f4a;
     border-left: 2px solid #3b2f4a;
@@ -44,3 +53,4 @@
   box-shadow: 1px 1px 0px #5f4d73, -1px -1px 0px #ebe6f0;
   cursor: pointer;
 }
+
