@@ -2,11 +2,10 @@ import Head from 'next/head';
 import Image from 'next/image';
 import styles from '../styles/Layout.module.css';
 import Link from 'next/link';
-import header from '../images/header.png'
-export const siteTitle = 'Next.js Sample Website';
 import Window from '../components/Window'
 import Folder from '../components/Folder'
-import Draggable from 'react-draggable';
+import AboutContent from '../components/AboutContent';
+import Guestbook from '../components/Guestbook';
 import { useState } from 'react';
 
 export default function Layout({ children, home }) {
@@ -56,18 +55,17 @@ export default function Layout({ children, home }) {
       
       <Head>
         <link rel="icon" href="/favicon.ico" />
-        <script src="https://cdn.jsdelivr.net/combine/npm/tone@14.7.58,npm/@magenta/music@1.23.1/es6/core.js,npm/focus-visible@5,npm/html-midi-player@1.5.0"></script>
         <meta
           name="description"
-          content="Learn how to build a personal website using Next.js"
+          content="Personal blog about fantasy, linear algebra, and everything"
         />
         <meta
           property="og:image"
           content={`https://og-image.vercel.app/${encodeURI(
-            siteTitle,
+            "fractum's crypt",
           )}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
         />
-        <meta name="og:title" content={siteTitle} />
+        <meta name="og:title" content="fractum's crypt" />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
       <header className={styles.header_layout}>
@@ -104,13 +102,21 @@ export default function Layout({ children, home }) {
       )}
     </div>
     <div className={styles.folder_box}>
-    <Folder title="About" handleClick={handleAboutClick}/>
-    <Folder title="Music" handleClick={handleMusicClick}/>
-    <Folder title="Chat" handleClick={handleChatClick}/>
+    <Folder title="About" handleClick={handleAboutClick} icon_image={"/folder_dark.png"}/>
+    <Folder title="Music" handleClick={handleMusicClick} icon_image={"/music.png"}/>
+    <Folder title="Guestbook" handleClick={handleChatClick} icon_image={"/text_file.png"}/>
     </div>
       
-      {isAbout && <Window handleWindowClose={handleAboutClose}>
-      Some About here
+      {isAbout && <Window handleWindowClose={handleAboutClose} header="About">
+        <AboutContent />
+        </Window>}
+
+      {isMusic && <Window handleWindowClose={handleMusicClose} header="Music">
+      Some Music here
+        </Window>}
+
+      {isChat && <Window handleWindowClose={handleChatClose} header="Guestbook">
+      <Guestbook />
         </Window>}
       
     </>

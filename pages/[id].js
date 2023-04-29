@@ -13,13 +13,6 @@ export default function Post({ postData }) {
   );
 }
 
-
-// {postData.title}
-// <br />
-// {postData.id}
-// <br />
-// {postData.author} 
-
 export async function getStaticProps({ params }) {
   
   const postData = await getPostData(params.id);
@@ -45,7 +38,6 @@ export async function getPostData(id) {
   const data = await getDoc(docRef);
   const post_data = data.data();
   // Combine the data with the id
-  console.log(post_data)
   return {
       ...post_data
 

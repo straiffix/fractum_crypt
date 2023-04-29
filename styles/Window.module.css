@@ -59,6 +59,7 @@
     margin: 2px;
     padding: 5px;
     height: 85%;
+    overflow-y:scroll;
     background-color: #ebedf0;
     border-top: 2px solid #3b2f4a;
     border-left: 2px solid #3b2f4a;

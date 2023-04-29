@@ -6,7 +6,8 @@ function ShortPost({ post_id, post }){
     
     return (
         <div className={styles.shortpost}>
-            <div className={styles.shortpostheader}>{post.title}
+            <div className={styles.shortpostheader}><b>{post.title} </b>
+            <div style={{float: "right"}}>{post.author}&ensp;<i>{post.DateStamp}</i></div>
             </div>
             <div className={styles.shortpostcontent}>
             
